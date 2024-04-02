@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>José Pàdrón</title>
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Hojas de estilo -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/css.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <h1>José Alejandro Padrón</h1>
+
+        <div class="perfil">
+            <div class="perfil__img">
+                <img src="img/perfil.JPG" alt="José Alejandro Padrón">
+            </div>
+            
+            <div class="perfil__descr">
+                <p class="perfil__text">Mi nombre es Jose Alejandro Padron Guzman, tengo 24 años y tengo 7 años de experiencia laboral.
+                    Particularmente soy una persona de calle, soy del tipo de persona que si no esta en la calle haciendo algo,
+                    trabajando, haciendo diligencias o cualquier cosa siento que pierdio el tiempo. Me considero una persona muy trabajadora,
+                    me esfuerzo por conseguir lo que quiero.</p>
+                    <a href="#experiencia" class="boton boton__primario">Mi Experiencia</a>  
+            </div>
+        </div>
+        
+    </header>
+    <section class="educacion" id="educacion">
+        <div class="educacion_contenedor">
+            <div class="educacion__titulo">
+                <h2>Educación</h2>
+            </div>
+            <div class="educacion__texto">
+                Me gradue en primaria en la Unidad Educativa La Asunción, estudie Bachillerato en el Colegio Salesiano Pio XII, 
+                graduandome de bachiller mención Procesamientos de Datos y Contabilidad, y actualmente curso el 6to Semestre
+                para obtener el titulo de TSU en Informatica en el Instituto IUTA.
+            </div>
+        </div>
+        
+    </section>
+    <section class="experiencia" id="experiencia">
+        <div class="contenedor">
+            <div class="experiencia__titulo">
+                <h2>Experiencia</h2>
+                <span>mi pasado y actualidad en el trabajo</span>
+            </div>
+            <div class="experiencia__texto">
+                Actualmente trabajo en una Empresa de Desarrollo de Software, Soporte Tecnico y Telecomunicaciones denominada TIDA. Donde desempeño el cargo de Supervisor de Soporte Tecnico y Telecomunicaciones, a su vez soy CEO de mi propia marca personal la cual se llama Enigma Studio, una empresa dedica a la gestión y desarrollo de redes sociales. Trabajando cada día en ser un mejor ser humano, yendo un paso a la vez hacia un mejor futuro para mi y quienes me rodean.
+            </div>
+            <a href="#fotos" class="boton boton__secundario">Mi colección de fotos</a>
+        </div>
+        
+    </section>
+    
+    <section class="fotos" id="fotos">
+        <div class="contenedor__fotos">
+            <div class="foto">
+                <img src="img/1.jpg" alt="Foto de mi galeria">
+            </div>
+            <div class="foto">
+                <img src="img/2.jpg" alt="Foto de mi galeria">
+            </div>
+            <div class="foto">
+                <img src="img/3.jpg" alt="Foto de mi galeria">
+            </div>
+            <div class="foto">
+                <img src="img/4.jpg" alt="Foto de mi galeria">
+            </div>
+            <div class="foto">
+                <img src="img/5.jpg" alt="Foto de mi galeria">
+            </div>
+            <div class="foto">
+                <img src="img/6.jpg" alt="Foto de mi galeria">
+            </div>
+            <div class="foto">
+                <img src="img/7.jpg" alt="Foto de mi galeria">
+            </div>
+            <div class="foto">
+                <img src="img/8.jpg" alt="Foto de mi galeria">
+            </div>
+            <div class="foto">
+                <img src="img/9.jpg" alt="Foto de mi galeria">
+            </div>
+        </div>
+        <div class="contenedor__fotos">
+            <a href="#header" class="boton boton__tercero">Volver al principio</a>
+        </div>
+        
+    </section>
+    <section class="footer">
+        <form id="form" class="form">
+            <input type="text" placeholder="Nombre" id="nombre">
+            <input type="email" placeholder="ejemplo@ejemplo.com" id="correo">
+            <textarea name="" id="mensaje" cols="30" rows="10" placeholder="¿De qué quieres hablar?" id="mensaje"></textarea>
+            <input id="enviar" type="submit" value="Enviar" class="boton boton__tercero" onclick="return enviarFormulario()">
+            <p id="error"></p>
+        </form>
+        <div class="contacto">
+            <h2>Contáctame</h2>
+            <a class="contacto__telefono" href="https://api.whatsapp.com/send?phone=584248567636">+58 424 8567636</a>
+        </div>
+    </section>
+    <script src="app.js"></script>
+</body>
+</html>

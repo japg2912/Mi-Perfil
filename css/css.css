@@ -1,0 +1,288 @@
+/* Variables personalizadas */
+:root {
+    --primario: #192949;
+    --secundario: #f5e244;
+    --gris: #e2e2e2;
+    --negro: #000007;
+    --claro: #485894;
+
+    --fuente: "Roboto";
+}
+
+/* Propiedades generales */
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+/* 1rem = 10px */
+*, *::before, *:after {
+    box-sizing: inherit;
+}
+/* el padding se ajusta automáticamente */
+body {
+    font-family: var(--fuente);
+    font-size: 1.6rem;
+    line-height: 2;
+}
+h1, h2, p {
+    font-family: var(--fuente);
+    margin: 0;
+}
+h1 {
+    font-size: 3.2rem;
+}
+h2 {
+    font-size: 2.4rem;
+}
+p {
+    font-size: 1.7rem;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+a {
+    text-decoration: none;
+    color: var(--gris);
+}
+.boton {
+    padding: 1rem;
+    border-radius: .5rem;
+    border: 0;
+    font-weight: 600;
+    transition-duration: 300ms;
+    width: 15rem;
+    text-decoration: none;
+}
+.boton:hover {
+    cursor: pointer;
+}
+.boton__primario {
+    background-color: var(--primario);
+    color: var(--gris);
+}
+.boton__secundario {
+    background-color: var(--primario);
+    color: var(--gris);
+}
+.boton__tercero {
+    background-color: var(--secundario);
+    color: var(--primario);
+}
+.boton__primario:hover {
+    background-color: var(--secundario);
+    border-bottom: 1px var(--primario) solid;
+    border-radius: 0;
+    color: var(--primario);
+}
+.boton__secundario:hover {
+    background-color: var(--primario);
+    border-bottom: 1px var(--secundario) solid;
+    border-radius: 0;
+    color: var(--secundario);
+}
+input, textarea {
+    color: var(--gris);
+}
+/* header */
+.header {
+    color: var(--primario);
+}
+.header h1 {
+    background-color: var(--primario);
+    color: var(--gris);
+    text-align: center;
+    margin: 0;
+}
+.perfil {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    background-color: var(--secundario);
+}
+.perfil__img {
+    padding: 1rem;
+    width: 40%;
+    height: 55rem;
+    overflow: hidden;
+}
+.perfil__img img{
+    height: 100%;
+    object-fit: cover;
+}
+.perfil__descr {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 3rem;
+    width: 50%;
+    text-align: center;
+    padding: 1rem;
+}
+/* EDUCACION */
+
+.educacion {
+    background-color: var(--primario);
+    color: var(--gris);
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+}
+.educacion_contenedor {
+    width: 70%;
+}
+.educacion__titulo h2 {
+    font-size: 6rem;
+    margin-bottom: -3rem;
+}
+.educacion__titulo {
+    margin-bottom: 2rem;
+}
+.educacion__texto {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+/* E X P E R I E N C I A */
+.experiencia {
+    background-color: var(--secundario);
+    color: var(--primario);
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+}
+.contenedor {
+    width: 70%;
+}
+.experiencia__titulo h2 {
+    font-size: 6rem;
+    margin-bottom: -3rem;
+}
+.experiencia__titulo {
+    margin-bottom: 2rem;
+}
+.experiencia__texto {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+/* G A L E R I A  D E  F O T O S  */
+.fotos {
+    background-color: var(--primario);
+    padding: 2rem 2rem 0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+.contenedor__fotos {
+    margin: 0 auto 2rem auto;
+    width: 50rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.foto {
+    height: 50rem;
+    width: 50rem;
+    object-fit: contain;
+    overflow: hidden;
+    transition-duration: 200ms;
+}
+.foto:hover {
+    scale: 110%;
+}
+.foto img {
+    width: 200%;
+    margin-left: -25rem;
+    margin-top: -5rem;
+}
+.foto:nth-child(1), .foto:nth-child(2), .foto:nth-child(3), .foto:nth-child(4), .foto:nth-child(5), .foto:nth-child(6) {
+    display: none;
+}
+/* F O R M U L A R I O */
+.footer {
+    background-color: var(--primario);
+    padding: 5rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    color: var(--gris);
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+input, textarea, input:focus, textarea:focus {
+    background-color: var(--primario);
+    border: none;
+    border-bottom: 1px solid var(--secundario);
+    resize: none;
+    transition-duration: 300ms;
+    outline: none;
+}
+input:focus::placeholder, textarea:focus::placeholder {
+    transition-duration: 300ms;
+    color: transparent;
+}
+::placeholder {
+    color: var(--gris);
+}
+.contacto__telefono {
+    transition-duration: 300ms;
+}
+.contacto__telefono:hover {
+    color: var(--secundario);
+    border-bottom: 1px solid var(--secundario);
+}
+/* V E R S I O N  P A R A  T A B L E T S  Y  P C s */
+
+@media  (min-width: 768px) {
+    .perfil {
+        flex-direction: column;
+        align-items: center;
+    }
+    .perfil__img {
+        height: 30rem;
+        object-fit: cover;
+        overflow: hidden;
+    }
+    .perfil__img img {
+        height: 40rem;
+        object-fit: cover;
+    }
+    .foto:nth-child(1), .foto:nth-child(2), .foto:nth-child(3), .foto:nth-child(4), .foto:nth-child(5), .foto:nth-child(6) {
+        display: initial;
+    }
+    .fotos {
+        justify-content: space-between;
+        align-items: center;
+    }
+    .experiencia {
+        padding: 3rem;
+    }
+    .contenedor__fotos {
+        width: 120rem;
+        margin: 0 auto;
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(3,1fr);
+        margin-bottom: 2rem;
+    }
+    .contenedor__fotos:nth-child(2) {
+        display: initial;
+    }
+    .foto {
+        height: 40rem;
+        width: 40rem;
+    }
+    .footer {
+        justify-content: flex-start;
+        gap: 4rem;
+    }
+}
